@@ -1,0 +1,16 @@
+.anime-card-list-box {
+    /* display: flex;
+  justify-content: space-between; */
+    /* transform: translateY(-10vh); */
+    /* flex: 1 1 33%;
+	width: 33%;
+	max-width: 33%;
+	padding: 0px 8px;
+	margin-bottom: 16px; */
+    display: flex;
+
+    flex-wrap: wrap;
+    /* max-width: 50%; */
+    justify-content: center;
+    /* width: 70vw; */
+}
