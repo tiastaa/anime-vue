@@ -14,8 +14,7 @@
   />
   <anime-synopsis-vue :key="animeInfo.mal_id" :synopsis="animeInfo.synopsis" />
 </template>
-<!-- :studios="animeInfo.studios?.Array.name"    :genre="animeInfo.genres?.Array.name"
-   -->
+
 <script>
 import AnimeMainInfoVue from "@/components/AnimeMainInfo.vue";
 import AnimeSynopsisVue from "./AnimeSynopsis.vue";
@@ -35,15 +34,7 @@ export default {
       default: () => [],
     },
   },
-  //   computed: {
-  //     randomAnime() {
-  //       console.log(this.$store.state.randomAnimeInfo);
-  //       return this.$store.state.randomAnimeInfo;
-  //     },
-  //   },
-  //   mounted() {
-  //     this.$store.dispatch("fetchRandomAnime");
-  //   },
+
 };
 </script>
 

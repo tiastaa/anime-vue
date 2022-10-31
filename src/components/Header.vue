@@ -12,9 +12,7 @@
       <router-link class="router-link-button" to="/"
         ><my-button-vue text="Go to Home"
       /></router-link>
-      <!-- <router-link class="router-link-button" to="/favourite"
-        ><my-button-vue text="Favourite" -->
-      <!-- /></router-link> -->
+
 
       <div>
         <input
@@ -28,16 +26,15 @@
       </div>
     </div>
 
-    <!-- route outlet -->
-    <!-- component matched by the route will render here -->
+
     <h1 class="header-title">MY ANIME</h1>
   </header>
-  <!-- <router-view></router-view> -->
+
 </template>
 
 <script>
 import MyButtonVue from "@/ui/MyButton.vue";
-//    import axios from 'axios';
+
 
 export default {
   name: "Header",

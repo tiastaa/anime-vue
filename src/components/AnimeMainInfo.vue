@@ -1,6 +1,6 @@
 <template>
   <div class="anime-box">
-    <!-- <anime-img-vue :imgSrc="animeImgInfo.jpg" /> -->
+    
 
     <div class="anime-img">
       <img :src="imgSrc" alt="" />
@@ -17,13 +17,7 @@
             <label for="anime-status">Status : </label>
             <div class="anime-status">{{ status }}</div>
           </div>
-          <!-- <label for="anime-studios">Stusios :</label>
-      <div class="anime-studios">{{ studios }}</div> -->
-          <!-- <label for="anime-dateAired">dddf :</label>
-      <div class="anime-dateAired">{{ dateAired }}</div> -->
-
-          <!-- <label for="anime-genre">Genre :</label>
-      <div class="anime-genre">{{ genre }}</div> -->
+          
           <div class="info">
             <label for="anime-score">Score : </label>
             <div class="anime-score">{{ score }}</div>
@@ -43,10 +37,7 @@
             <label for="anime-episodes">Episodes : </label>
             <div class="anime-episodes">{{ episodes }} ep</div>
           </div>
-          <!-- <div class="info">
-        <label for="anime-popularity">Popularity :</label>
-        <div class="anime-popularity">{{ popularity }}</div>
-      </div> -->
+          
         </div>
       </div>
     </div>
@@ -54,11 +45,11 @@
 </template>
 
 <script>
-// import AnimeImgVue from "./AnimeImg.vue";
+
 export default {
   name: "AnimeMainInfo",
   components: {
-    // AnimeImgVue,
+   
   },
   props: {
     imgSrc: {
@@ -74,22 +65,12 @@ export default {
       type: String,
       default: ". . .",
     },
-    // studios: {
-    //   type: String,
-    //   default: ". . .",
-    // },
-    // dateAired: {
-    //   type: String,
-    //   default: ". . .",
-    // },
+
     status: {
       type: String,
       default: ". . .",
     },
-    // genre: {
-    //   type: String,
-    //   default: ". . .",
-    // },
+
     score: {
       type: Number,
       default: 0,
@@ -106,10 +87,7 @@ export default {
       type: Number,
       default: 0,
     },
-    // popularity: {
-    //   type: Number,
-    //   default: 0,
-    // },
+
   },
 };
 </script>

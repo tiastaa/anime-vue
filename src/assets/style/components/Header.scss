@@ -15,7 +15,7 @@
 
 .router-link-button {
     height: 100%;
-    /* width: 100%; */
+
     cursor: auto;
 }
 
@@ -33,7 +33,7 @@
             6% 5%,
             29% 48%);
     background-color: white;
-    /* transform: scaleY(40rem); */
+ 
     flex-shrink: 0;
 }
 
@@ -49,39 +49,20 @@
     cursor: default;
 }
 
-// input[type="search"]::-webkit-search-cancel-button {
-//     -webkit-appearance: none;
-//     width: 0px;
-//     height: 0px;
-// }
-
-/* .router-link{
-   
-    
-   color: white;
-   border: none;
-   
-   
+input[type="search"]::-webkit-search-cancel-button {
+    appearance: none;
+    width: 0px;
+    height: 0px;
 }
-.router-link:hover{
-   background-color:rgba(147, 104, 107, 0.283);
-   border-radius: 3px;
 
-}
-.router-link:active{
-   background-color: rgba(147, 104, 107, 0.405);
-}  */
+
 .my-search-input {
     background: none;
-    /* border-radius: 3px; */
+   
     border: none;
     outline: none;
     color: white;
     border-bottom: 2px solid rgba(106, 72, 83, 0.691);
     font-size: inherit;
-    /* background-image: linear-gradient(
-    to bottom,
-    rgba(178, 178, 178, 0),
-    #4f383825
-  ); */
+
 }

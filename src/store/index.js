@@ -4,7 +4,7 @@ import { createStore } from "vuex";
 export default createStore({
   state: {
     animeInfo: {},
-    // animeImgInfo:{},
+   
     randomAnimeInfo: {},
     animeList: {},
     topAnimeList: {},
@@ -20,10 +20,7 @@ export default createStore({
     updateTopList(state, toplist) {
       state.topAnimeList = toplist;
     },
-    // updateAnimeImg(state,img){
-    //   state.animeImgInfo=img
-    // }
-    // ,
+
     searchQuery(state, srch) {
       state.search_query = srch;
     },
@@ -32,14 +29,7 @@ export default createStore({
     },
   },
   actions: {
-    // fetchAnimeInfo(context, id) {
-    //   axios.get(`https://api.jikan.moe/v4/anime/${id}/full`)
 
-    //     .then((response) => {console.log(response.data); return response.json(); })
-    //     .then((data) => {
-    //       context.commit('updateAnime', data)
-    //     });
-    // },
     fetchAnimeInfo({ commit }, id) {
       axios
         .get(`https://api.jikan.moe/v4/anime/${id}/full`)
@@ -47,16 +37,7 @@ export default createStore({
           commit("updateAnime", response.data.data);
         });
     },
-    // fetchAnimeList(context, search ) {
-    //   fetch(
-    //     `https://api.jikan.moe/v4/anime?q=${
-    //       search ?? ""
-        
-    //     }`
-    //   )
-    //     .then((res) => res.json())
-    //     .then((data) => context.commit("updateList", data.data));
-    // },
+
     fetchAnimeList({commit}, search ) {
       axios
         .get(`https://api.jikan.moe/v4/anime?q=${
@@ -77,13 +58,7 @@ export default createStore({
         commit("updateRandomAnime", response.data.data);
       });
     },
-    // fetchAnimeImgInfo({commit}, id){
-    //     axios(`https://api.jikan.moe/v4/anime/${id}/full`)
-    //       .then((response)=>{
-    //       commit('updateAnimeImg', response.data.data.images.jpg.large_image_url)
-    //     });
 
-    // }
   },
   getters: {
     anime(state) {

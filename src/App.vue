@@ -1,15 +1,15 @@
 <template>
-  <!-- <header-vue></header-vue> -->
+  
   <router-view></router-view>
 </template>
 
 <script>
-// import HeaderVue from "./components/Header.vue";
+
 
 export default {
   name: "App",
   components: {
-    // HeaderVue,
+    
   },
 };
 </script>
@@ -27,7 +27,7 @@ export default {
   box-sizing: border-box;
 }
 html {
-  /* font-size: 62.5%; */
+  
   font-size: 25px;
 }
 body {
